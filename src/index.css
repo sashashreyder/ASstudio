@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Немного ускорила карусель (30s вместо 40s), но можешь поменять обратно */
+  --animate-scroll: scroll 30s linear infinite;
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Сдвиг ровно на половину = идеальный стык */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #111827;
+}
+
+/* Кастомный класс: ставит анимацию на паузу при наведении мышки */
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
