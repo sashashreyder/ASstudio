@@ -61,29 +61,29 @@ export const CONFIG = {
   ];
   
   // 4. КАРТИНКИ ПОРТФОЛИО 
-  export const PORTFOLIO_IMAGES = [
-    {
-      preview: "public/Обложка Кинофест.png", 
-      link: "public/Кинофест.pdf"         
-    },
-    {
-      preview: "public/Обложка Renders Técnicos.png",
-      link: "public/Visualização 3D e Renders Técnicos de Alta Precisão Art Direction baseada em briefing técnico detalhado.pdf"
-    },
-    {
-      preview: "public/EDTECH.mp4",
-      link: "https://c2gap-fill-fleeting-moments.netlify.app/"
-    },
-    {
-      preview: "public/LookBook Cover.png",
-      link: "public/LookBook.pdf"
-    },
-    {
-      preview: "public/Burya.png",
-      link: "public/Буря.pdf"
-    },
-    {
-      preview: "public/Гидрорезка Обложка.mp4",
-      link: "https://waterjetcut.netlify.app/"
-    }
-  ];
+export const PORTFOLIO_IMAGES = [
+  {
+    preview: "/cinema-cover.png",
+    link: "/cinema.pdf"
+  },
+  {
+    preview: "/renders-cover.png",
+    link: "/renders-tecnicos.pdf"
+  },
+  {
+    preview: "/EDTECH.mp4",
+    link: "https://c2gap-fill-fleeting-moments.netlify.app/"
+  },
+  {
+    preview: "/LookBook Cover.png",
+    link: "/LookBook.pdf"
+  },
+  {
+    preview: "/Burya.png",
+    link: "/burya.pdf"
+  },
+  {
+    preview: "/hydrocut-cover.mp4",
+    link: "https://waterjetcut.netlify.app/"
+  }
+];
