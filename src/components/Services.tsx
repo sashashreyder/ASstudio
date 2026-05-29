@@ -7,7 +7,7 @@ export function Services() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <section id="servicos" className="py-20 bg-white px-6">
+    <section id="servicos" className="pt-20 pb-10 bg-white px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 tracking-tight">O que eu faço</h2>
         <div className="space-y-4">
@@ -24,11 +24,10 @@ export function Services() {
                     {srv.price}
                   </span>
                 </div>
-                {/* Иконка стрелочки, которая крутится при клике */}
+
                 <ChevronDown className={`text-gray-400 transition-transform duration-300 ${openId === srv.id ? 'rotate-180' : ''}`} size={28} />
               </button>
-              
-              {/* Скрытый контент */}
+
               <div className={`px-6 md:px-8 overflow-hidden transition-all duration-300 ${openId === srv.id ? 'max-h-96 pb-8 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <p className="text-gray-600 leading-relaxed pt-4 border-t border-gray-100">
                   {srv.details}

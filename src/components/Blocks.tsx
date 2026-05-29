@@ -3,7 +3,7 @@ import { CONFIG, REVIEWS, PORTFOLIO_IMAGES } from '../data';
 
 export function Benefits() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="pt-12 pb-20 md:pt-20 md:pb-32 bg-white px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
           { icon: Zap, title: "Velocidade", text: "Sem enrolação. Prazos curtos e foco na entrega." },
