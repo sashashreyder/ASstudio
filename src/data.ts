@@ -3,7 +3,7 @@
 // 1. ОСНОВНЫЕ НАСТРОЙКИ
 export const CONFIG = {
     studioName: "AS Studio",
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSenFxFlNMqeVMcsYEXZNqgxiaeLo1C8LSgNCaNIEYJBqlUrEA/viewform?usp=publish-editor",
+    formLink: "https://forms.gle/eML3dx6RXJ1SZCh38",
     authorName: "Aleksandra Shreider",
     location: "São Paulo, SP",
     currency: "(R$ / $ / €)",

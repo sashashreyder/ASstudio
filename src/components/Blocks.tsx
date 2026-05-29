@@ -23,7 +23,7 @@ export function Benefits() {
 }
 
 export function Portfolio() {
-  // Дублируем массив для бесшовного бесконечного кручения
+
   const items = [...PORTFOLIO_IMAGES, ...PORTFOLIO_IMAGES];
 
   return (
