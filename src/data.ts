@@ -12,34 +12,41 @@ export const CONFIG = {
   // 2. УСЛУГИ 
   export const SERVICES = [
     {
-      id: 1,
-      title: "Visual & Reels Express",
-      price: "a partir de R$ 99", 
-      shortDesc: "Renders profissionais, vídeos IA e templates para redes sociais.",
-      details: "Transformo fotos simples do seu produto em renders de estúdio de alta qualidade. Inclui vídeos curtos dinâmicos (com IA e transições perfeitas para Reels/TikTok) e templates minimalistas no Canva. Seu feed vai parecer de uma marca premium.",
+    id: 1,
+    title: "Design para Empresas",
+    price: "a partir de R$ 99",
+    shortDesc: "Cartões de visita, banners, materiais impressos e artes digitais.",
+    details:
+    "Crio materiais visuais profissionais para ajudar sua empresa a transmitir confiança desde o primeiro contato. Cartões de visita, banners, cardápios, flyers, apresentações comerciais e artes para redes sociais com visual moderno e profissional.",
     },
+    
     {
-      id: 2,
-      title: "Infoprodutos & Design Corporativo",
-      price: "a partir de R$ 149",
-      shortDesc: "Apresentações, materiais didáticos, PDFs e artes para impressão.",
-      details: "Design de apresentações estáticas e animadas para aulas ou pitches. Uso imagens licenciadas (Canva Premium) para zero dor de cabeça com direitos autorais. Também crio designs prontos para impressão gráfica (cartões, cardápios físicos, flyers).",
+    id: 2,
+    title: "Renders & Visualização",
+    price: "a partir de R$ 149",
+    shortDesc: "Renders de produtos, fachadas, interiores e apresentações visuais.",
+    details:
+    "Transformo fotos, esboços ou referências em imagens realistas de alta qualidade. Ideal para produtos, arquitetura, fachadas, materiais promocionais e apresentações para clientes.",
     },
+    
     {
-      id: 3,
-      title: "Localização & Inglês",
-      price: "a partir de R$ 199",
-      shortDesc: "Cursos interativos, adaptação de jogos e aulas autorais.",
-      details: "Criação de materiais e aulas autorais em inglês. Faço a localização completa de jogos e dinâmicas do inglês para o português (níveis A0 a C1), garantindo adaptação cultural. Possuo diploma na área para garantir máxima qualidade didática.",
+    id: 3,
+    title: "Landing Page MVP",
+    price: "a partir de R$ 299",
+    shortDesc: "Sites rápidos, modernos e focados em conversão.",
+    details:
+    "Desenvolvo landing pages leves e responsivas, com foco em apresentar seus serviços de forma profissional. Sem WordPress pesado. Domínio e hospedagem são contratados separadamente (posso ajudar na configuração).",
     },
+    
     {
-      id: 4,
-      title: "Landing Page MVP",
-      price: "a partir de R$ 299",
-      shortDesc: "Sites rápidos no código limpo. Sem WordPress travando.",
-      details: "Desenvolvo vitrines rápidas e 100% focadas no mobile. ATENÇÃO: Domínio e servidor são pagos por você separadamente (ajudo a configurar). Você mesmo atualiza seu conteúdo ou assina meu plano de manutenção mensal (R$ 150/mês) para que eu cuide de tudo.",
-    }
-  ];
+    id: 4,
+    title: "Materiais Educacionais & Localização",
+    price: "sob consulta",
+    shortDesc: "Conteúdo educacional, cursos e adaptação de materiais.",
+    details:
+    "Criação de materiais didáticos, apresentações, cursos interativos e localização de conteúdos entre inglês, português e russo. Serviço voltado para escolas, professores, empresas e projetos educacionais.",
+    },
+    ];    
   
   // 3. ОТЗЫВЫ 
   export const REVIEWS = [
