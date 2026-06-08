@@ -5,7 +5,7 @@ export function Benefits() {
   return (
     <section className="pt-12 pb-20 md:pt-20 md:pb-32 bg-white px-6">
 
-      <div className="max-w-6xl mx-auto mb-12">
+      <div className="max-w-6xl mx-auto mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
           Por que escolher a AS Studio?
         </h2>
@@ -17,18 +17,23 @@ export function Benefits() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { icon: Zap, title: "Velocidade", text: "Prazos rápidos e comunicação direta." },
-          { icon: CheckCircle, title: "Ajustes Inclusos", text: "Direito a alterações gratuitas para ficar perfeito." },
-          { icon: MessageCircle, title: "Sem Agência", text: "Atendimento direto. Sem intermediários e sem custos desnecessários." },
-          { icon: Globe, title: "Sem Reuniões", text: "Tudo resolvido por mensagem. Sem chamadas intermináveis." }
+          { icon: Zap, title: "Velocidade", text: "Prazos rápidos, comunicação direta e foco na entrega." },
+          { icon: CheckCircle, title: "Ajustes Inclusos", text: "Revisões inclusas para garantir um resultado alinhado ao briefing." },
+          { icon: MessageCircle, title: "Sem Agência", text: "Atendimento direto, sem intermediários e sem custos extras." },
+          { icon: Globe, title: "Sem Reuniões", text: "Tudo resolvido por mensagem, sem chamadas intermináveis." }
         ].map((item, i) => (
           <div
             key={i}
-            className="p-6 bg-gray-50 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="p-10 bg-gray-50 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
           >
-            <item.icon className="text-black mb-4" size={32} />
-            <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-            <p className="text-gray-500 text-sm">{item.text}</p>
+            <div className="flex items-center gap-3 mb-5">
+              <item.icon className="text-black" size={28} />
+              <h4 className="font-bold text-lg">{item.title}</h4>
+            </div>
+
+            <p className="text-gray-500 text-sm">
+              {item.text}
+            </p>
           </div>
         ))}
       </div>
