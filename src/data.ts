@@ -15,36 +15,36 @@ export const CONFIG = {
     id: 1,
     title: "Design para Empresas",
     price: "a partir de R$ 99",
-    shortDesc: "Cartões de visita, banners, materiais impressos e artes digitais.",
+    shortDesc: "Cartões de visita, banners, apresentações e materiais promocionais.",
     details:
-    "Crio materiais visuais profissionais para ajudar sua empresa a transmitir confiança desde o primeiro contato. Cartões de visita, banners, cardápios, flyers, apresentações comerciais e artes para redes sociais com visual moderno e profissional.",
+    "Crio materiais visuais profissionais para ajudar sua empresa a transmitir confiança desde o primeiro contato. Cartões de visita, banners, cardápios, flyers, apresentações comerciais, artes para redes sociais e outros materiais personalizados para impressão ou uso digital.",
     },
     
     {
     id: 2,
     title: "Renders & Visualização",
     price: "a partir de R$ 149",
-    shortDesc: "Renders de produtos, fachadas, interiores e apresentações visuais.",
+    shortDesc: "Renders de produtos, fachadas, interiores e materiais visuais.",
     details:
-    "Transformo fotos, esboços ou referências em imagens realistas de alta qualidade. Ideal para produtos, arquitetura, fachadas, materiais promocionais e apresentações para clientes.",
+    "Transformo fotos, esboços ou referências em imagens realistas de alta qualidade. Ideal para produtos, arquitetura, fachadas, interiores, apresentações para clientes e materiais promocionais.",
     },
     
     {
     id: 3,
-    title: "Landing Page MVP",
-    price: "a partir de R$ 299",
-    shortDesc: "Sites rápidos, modernos e focados em conversão.",
+    title: "Landing Pages & Sites",
+    price: "a partir de R$ 799",
+    shortDesc: "Sites rápidos, modernos e focados em apresentar seu negócio.",
     details:
-    "Desenvolvo landing pages leves e responsivas, com foco em apresentar seus serviços de forma profissional. Sem WordPress pesado. Domínio e hospedagem são contratados separadamente (posso ajudar na configuração).",
+    "Desenvolvo landing pages e sites institucionais leves, responsivos e com visual profissional. Ideal para empresas, profissionais autônomos, portfólios e páginas de serviços. Posso ajudar com domínio, hospedagem e publicação.",
     },
     
     {
     id: 4,
-    title: "Materiais Educacionais & Localização",
+    title: "Projetos Especiais",
     price: "sob consulta",
-    shortDesc: "Conteúdo educacional, cursos e adaptação de materiais.",
+    shortDesc: "Localização, materiais educacionais, conteúdo e outras demandas.",
     details:
-    "Criação de materiais didáticos, apresentações, cursos interativos e localização de conteúdos entre inglês, português e russo. Serviço voltado para escolas, professores, empresas e projetos educacionais.",
+    "Também trabalho com localização entre português, inglês e russo, criação de materiais educacionais, apresentações, cursos, PDFs, conteúdos digitais, adaptação de materiais e projetos personalizados. Se você precisa de algo que não encontrou na lista, envie sua ideia. Com grande chance eu consiga ajudar ou indicar a melhor solução.",
     },
     ];    
   
