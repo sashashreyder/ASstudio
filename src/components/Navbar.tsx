@@ -16,7 +16,7 @@ export function Navbar() {
           <a href="#portfolio" className="text-gray-600 hover:text-black transition">Portfólio</a>
           <a href="#sobre" className="text-gray-600 hover:text-black transition">Sobre</a>
           <a href={CONFIG.formLink} target="_blank" rel="noreferrer" className="bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors duration-300 ease-out">
-            Fazer orçamento
+          Solicitar orçamento
           </a>
         </div>
 
