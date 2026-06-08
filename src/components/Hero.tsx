@@ -7,8 +7,7 @@ export function Hero() {
         Seu negócio merece parecer tão profissional quanto você trabalha.
       </h1>
       <p className="mt-8 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-        Ajudo pequenas empresas a parecerem mais profissionais,
-        transmitirem confiança e conquistarem mais clientes.
+      Design profissional para empresas que querem transmitir confiança <br/> e conquistar mais clientes.
       </p>
       <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 items-center">
         <a
