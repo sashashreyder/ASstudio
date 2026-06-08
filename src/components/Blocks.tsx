@@ -101,13 +101,23 @@ export function AboutAndReviews() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">Prazer, {CONFIG.authorName}.</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl">
-            Oi! Sou imigrante, moro no Brasil e sou completamente apaixonada por transformar ideias complexas em design minimalista e funcional. Meu estilo de trabalho é acolhedor, mas super direto e focado no que realmente importa: o resultado do seu negócio.
+            Oi! Sou Aleksandra.
+            Estou sempre estudando, testando novas ferramentas e procurando formas melhores de resolver problemas visuais para empresas e profissionais.
+            Gosto de conhecer projetos diferentes, criar parcerias de longo prazo e ajudar negócios a se apresentarem de forma mais profissional.
             <br /><br />
             <strong className="text-black">Por que você não vai encontrar meu WhatsApp por aqui?</strong><br />
-            Não é por falta de carinho, juro! É porque valorizo o nosso tempo real. Reuniões longas e áudios infinitos acabam gerando caos e atrasando os projetos. Prefiro concentrar toda a nossa energia no seu briefing estruturado. Assim, consigo trabalhar focada, de forma assíncrona para qualquer lugar do mundo, e te entregar um material incrível e impecável muito mais rápido.
+            Porque acredito que um bom projeto começa com um bom briefing. Quando você preenche o formulário, consigo entender melhor sua necessidade antes mesmo do nosso primeiro contato.
+            <br /><br />
+            Isso economiza tempo para nós dois, evita mensagens intermináveis e me permite analisar seu projeto com mais atenção. Depois da análise, entro em contato pelo WhatsApp com sugestões, dúvidas (se houver) e uma proposta personalizada de acordo com seus objetivos e orçamento.
           </p>
-          <a href={CONFIG.formLink} target="_blank" rel="noreferrer" className="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:scale-105 transition-all duration-300 ease-out inline-block shadow-lg">
-            Começar Agora
+
+          <a
+            href={CONFIG.formLink}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:scale-105 transition-all duration-300 ease-out inline-block shadow-lg"
+          >
+            Solicitar Proposta
           </a>
         </div>
       </section>
@@ -132,15 +142,16 @@ export function AboutAndReviews() {
 
 export function Footer() {
   return (
-    <footer className="py-12 bg-black text-white px-6 text-center rounded-t-[3rem]">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold mb-8">Vamos dar um upgrade no seu negócio?</h2>
-        <a href={CONFIG.formLink} target="_blank" rel="noreferrer" className="inline-block bg-white text-black px-8 py-5 rounded-full text-lg font-bold hover:bg-gray-300 transition-colors duration-500 ease-out mb-16 w-full md:w-auto shadow-xl">
-          Preencher Briefing Rápido
-        </a>
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 border-t border-gray-800 pt-8">
-          <p>© {new Date().getFullYear()} {CONFIG.studioName}.</p>
-          <p className="mt-4 md:mt-0">📍 Baseada em {CONFIG.location}. Atendendo o mundo {CONFIG.currency}.</p>
+    <footer className="py-12 px-6 border-t border-gray-200">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+          <p>
+            © {new Date().getFullYear()} {CONFIG.studioName}
+          </p>
+
+          <p>
+            Baseada em {CONFIG.location} • Atendimento remoto para todo o mundo {CONFIG.currency}
+          </p>
         </div>
       </div>
     </footer>
