@@ -51,21 +51,21 @@ export const SERVICES = [
 // 3. ОТЗЫВЫ 
 export const REVIEWS = [
   {
-  name: "Oksana K.",
-  business: "Educação & EdTech",
-  text: "Desenvolvemos juntos dezenas de materiais educacionais interativos e aplicações personalizadas em React. A combinação entre design, conteúdo e implementação técnica tornou o aprendizado mais dinâmico e permitiu criar experiências adaptadas às necessidades dos estudantes."
+    name: "Oksana K.",
+    business: "Educação & EdTech",
+    text: "Desenvolvemos juntos dezenas de materiais educacionais interativos e aplicações personalizadas em React. A combinação entre design, conteúdo e implementação técnica tornou o aprendizado mais dinâmico e permitiu criar experiências adaptadas às necessidades dos estudantes."
   },
   {
-  name: "Marcos Ferreira",
-  business: "Produtos Industriais B2B",
-  text: "Precisávamos de apresentações comerciais e materiais visuais para demonstrar produtos técnicos a clientes corporativos. Os renders e a estrutura visual ajudaram a apresentar informações complexas de forma clara e profissional, contribuindo para negociações com grandes parceiros."
+    name: "Marcos Ferreira",
+    business: "Produtos Industriais B2B",
+    text: "Precisávamos de apresentações comerciais e materiais visuais para demonstrar produtos técnicos a clientes corporativos. Os renders e a estrutura visual ajudaram a apresentar informações complexas de forma clara e profissional, contribuindo para negociações com grandes parceiros."
   },
   {
-  name: "Rodrigo Mendes",
-  business: "Engenharia & Soluções Industriais",
-  text: "Os renders técnicos facilitaram a visualização dos produtos e modernizaram significativamente nossa comunicação visual. O resultado foi tão positivo que posteriormente ampliamos a colaboração para o desenvolvimento de um novo site corporativo."
+    name: "Rodrigo Mendes",
+    business: "Engenharia & Soluções Industriais",
+    text: "Os renders técnicos facilitaram a visualização dos produtos e modernizaram significativamente nossa comunicação visual. O resultado foi tão positivo que posteriormente ampliamos a colaboração para o desenvolvimento de um novo site corporativo."
   }
-  ];  
+];
 
 // 4. КАРТИНКИ ПОРТФОЛИО 
 export const PORTFOLIO_IMAGES = [
@@ -91,6 +91,6 @@ export const PORTFOLIO_IMAGES = [
   },
   {
     preview: "/hydrocut-cover.mp4",
-    link: "https://waterjetcut.netlify.app/"
+    link: "https://bestpoint.vercel.app/"
   }
 ];
