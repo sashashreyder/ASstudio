@@ -92,5 +92,9 @@ export const PORTFOLIO_IMAGES = [
   {
     preview: "/hydrocut-cover.mp4",
     link: "https://bestpoint.vercel.app/"
-  }
+  },
+  {
+    preview: "/houses-cover.png",
+    link: "/renders.pdf"
+  },
 ];

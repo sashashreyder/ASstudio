@@ -55,7 +55,7 @@ export function Portfolio() {
       <div className="relative w-full flex overflow-hidden">
         <div className="animate-scroll flex gap-4 w-max pause-on-hover">
           {items.map((item, idx) => {
-            // Проверяем, видео это или картинка
+
             const isVideo = item.preview.endsWith('.mp4');
 
             return (
