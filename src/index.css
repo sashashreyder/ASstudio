@@ -1,25 +1,152 @@
 @import "tailwindcss";
 
+:root {
+  --background: #fafafa;
+  --surface: #ffffff;
+  --surface-muted: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border: #e5e7eb;
+  --border-subtle: #f3f4f6;
+  --accent: #111827;
+  --accent-hover: #1f2937;
+  --card-background: #f9fafb;
+  --button-background: #111827;
+  --button-text: #ffffff;
+  --button-hover: #1f2937;
+  --nav-background: rgba(255, 255, 255, 0.9);
+  --selection-background: #111827;
+  --selection-text: #ffffff;
+  --icon: #111827;
+  --icon-muted: #9ca3af;
+  --badge-background: #f3f4f6;
+  --badge-text: #111827;
+  --placeholder: #e5e7eb;
+  --switcher-divider: #d1d5db;
+  --switcher-active: #111827;
+  --switcher-inactive: #9ca3af;
+  --switcher-hover: #6b7280;
+  --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06);
+  --shadow-md: 0 4px 12px rgba(17, 24, 39, 0.08);
+  --shadow-lg: 0 10px 24px rgba(17, 24, 39, 0.12);
+}
+
+[data-theme="dark"] {
+  --background: #1a1917;
+  --surface: #242220;
+  --surface-muted: #2e2c29;
+  --text-primary: #f2f0ec;
+  --text-secondary: #a9a59e;
+  --text-muted: #7d7972;
+  --border: #3a3834;
+  --border-subtle: #33312e;
+  --accent: #f2f0ec;
+  --accent-hover: #e0ddd7;
+  --card-background: #2e2c29;
+  --button-background: #f2f0ec;
+  --button-text: #1a1917;
+  --button-hover: #e0ddd7;
+  --nav-background: rgba(26, 25, 23, 0.92);
+  --selection-background: #f2f0ec;
+  --selection-text: #1a1917;
+  --icon: #f2f0ec;
+  --icon-muted: #7d7972;
+  --badge-background: #3a3834;
+  --badge-text: #f2f0ec;
+  --placeholder: #3a3834;
+  --switcher-divider: #4a4743;
+  --switcher-active: #f2f0ec;
+  --switcher-inactive: #7d7972;
+  --switcher-hover: #a9a59e;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.36);
+}
+
 @theme {
-  /* Немного ускорила карусель (30s вместо 40s), но можешь поменять обратно */
   --animate-scroll: scroll 30s linear infinite;
-  
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-card: var(--card-background);
+  --color-button: var(--button-background);
+  --color-button-foreground: var(--button-text);
+  --color-button-hover: var(--button-hover);
+  --color-nav: var(--nav-background);
+  --color-icon: var(--icon);
+  --color-icon-muted: var(--icon-muted);
+  --color-badge: var(--badge-background);
+  --color-badge-foreground: var(--badge-text);
+  --color-placeholder: var(--placeholder);
+  --color-switcher-divider: var(--switcher-divider);
+  --color-switcher-active: var(--switcher-active);
+  --color-switcher-inactive: var(--switcher-inactive);
+  --color-switcher-hover: var(--switcher-hover);
+
+  --shadow-theme-sm: var(--shadow-sm);
+  --shadow-theme-md: var(--shadow-md);
+  --shadow-theme-lg: var(--shadow-lg);
+
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Сдвиг ровно на половину = идеальный стык */
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 body {
-  background-color: #FAFAFA;
-  color: #111827;
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Кастомный класс: ставит анимацию на паузу при наведении мышки */
+::selection {
+  background-color: var(--selection-background);
+  color: var(--selection-text);
+}
+
+.hero-title {
+  font-size: clamp(2.25rem, 4.5vw + 1rem, 4.5rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.hero-description {
+  font-size: clamp(1.125rem, 1.5vw + 0.75rem, 1.5rem);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.section-title {
+  text-wrap: balance;
+}
+
+.benefits-title {
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  text-wrap: balance;
+}
+
 .pause-on-hover:hover {
   animation-play-state: paused;
 }
@@ -27,6 +154,7 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

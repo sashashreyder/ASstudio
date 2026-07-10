@@ -1,39 +1,97 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { CONFIG } from '../data';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { CONFIG } from "../data";
+import { useLanguage } from "../i18n/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, formLink } = useLanguage();
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <nav className="fixed w-full top-0 z-50 bg-nav backdrop-blur-md border-b border-border-subtle">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold tracking-tighter">{CONFIG.studioName}.</a>
-        
-        {/* Десктоп */}
+        <a href="#" className="text-xl font-bold tracking-tighter text-foreground">
+          {CONFIG.studioName}.
+        </a>
+
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <a href="#servicos" className="text-gray-600 hover:text-black transition">Serviços</a>
-          <a href="#portfolio" className="text-gray-600 hover:text-black transition">Portfólio</a>
-          <a href="#sobre" className="text-gray-600 hover:text-black transition">Sobre</a>
-          <a href={CONFIG.formLink} target="_blank" rel="noreferrer" className="bg-black text-white px-5 py-2.5 rounded-full hover:bg-gray-800 transition-colors duration-300 ease-out">
-          Solicitar orçamento
+          <a
+            href="#servicos"
+            className="text-secondary hover:text-foreground transition"
+          >
+            {t.nav.services}
+          </a>
+          <a
+            href="#portfolio"
+            className="text-secondary hover:text-foreground transition"
+          >
+            {t.nav.portfolio}
+          </a>
+          <a
+            href="#sobre"
+            className="text-secondary hover:text-foreground transition"
+          >
+            {t.nav.about}
+          </a>
+          <div className="flex items-center gap-2">
+            <ThemeSwitcher />
+            <LanguageSwitcher />
+          </div>
+          <a
+            href={formLink}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-button text-button-foreground px-5 py-2.5 rounded-full hover:bg-button-hover transition-colors duration-300 ease-out"
+          >
+            {t.nav.requestQuote}
           </a>
         </div>
 
-        {/* Мобилка: кнопка бургера */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <ThemeSwitcher />
+          <LanguageSwitcher />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-foreground"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
-      {/* Выпадающее меню для мобилки */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100 px-6 py-6 flex flex-col space-y-4">
-          <a href="#servicos" onClick={() => setIsOpen(false)} className="text-lg font-medium">Serviços</a>
-          <a href="#portfolio" onClick={() => setIsOpen(false)} className="text-lg font-medium">Portfólio</a>
-          <a href="#sobre" onClick={() => setIsOpen(false)} className="text-lg font-medium">Sobre</a>
-          <a href={CONFIG.formLink} target="_blank" rel="noreferrer" className="bg-black text-white px-6 py-4 rounded-full font-bold text-center mt-4">
-            Receber Proposta
+        <div className="md:hidden bg-surface border-b border-border-subtle px-6 py-6 flex flex-col space-y-4">
+          <a
+            href="#servicos"
+            onClick={() => setIsOpen(false)}
+            className="text-lg font-medium text-foreground"
+          >
+            {t.nav.services}
+          </a>
+          <a
+            href="#portfolio"
+            onClick={() => setIsOpen(false)}
+            className="text-lg font-medium text-foreground"
+          >
+            {t.nav.portfolio}
+          </a>
+          <a
+            href="#sobre"
+            onClick={() => setIsOpen(false)}
+            className="text-lg font-medium text-foreground"
+          >
+            {t.nav.about}
+          </a>
+          <a
+            href={formLink}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-button text-button-foreground px-6 py-4 rounded-full font-bold text-center mt-4 hover:bg-button-hover transition-colors duration-300 ease-out"
+          >
+            {t.nav.receiveProposal}
           </a>
         </div>
       )}
