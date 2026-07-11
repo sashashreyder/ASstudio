@@ -13,14 +13,13 @@ export const translations = {
       portfolio: "Portfólio",
       about: "Sobre",
       requestQuote: "Solicitar orçamento",
-      receiveProposal: "Receber Proposta",
+      receiveProposal: "Receber proposta",
     },
     hero: {
-      title:
-        "Seu negócio merece parecer tão profissional quanto você trabalha.",
+      title: "Make your business look clear, professional, and ready to sell.",
       description:
-        "Design profissional para empresas que querem transmitir confiança e conquistar mais clientes. Preencha um breve formulário e descreva sua ideia. Após a análise, entrarei em contato pelo WhatsApp com uma proposta personalizada de acordo com seus objetivos, prazo e orçamento.",
-      cta: "Receber proposta →",
+        "Visual design for small businesses and creative brands that want to build trust, present their work better, and attract more clients. Fill out a short brief, tell me what you need, and I’ll send a tailored proposal based on your goals, timeline, and budget.",
+      cta: "Get a proposal →",
     },
     services: {
       title: "O que eu faço",
@@ -74,7 +73,7 @@ export const translations = {
           text: "Prazos rápidos, comunicação direta e foco na entrega.",
         },
         {
-          title: "Ajustes Inclusos",
+          title: "Ajustes incluídos",
           text: "Revisões inclusas para garantir um resultado alinhado ao briefing.",
         },
         {
@@ -92,15 +91,15 @@ export const translations = {
       imageAlt: "Trabalho do portfólio",
     },
     about: {
-      title: "Prazer, Aleksandra Shreider.",
+      title: "Hi, I'm Aleksandra Shreider.",
       intro:
-        "Oi! Sou Aleksandra. Estou sempre estudando, testando novas ferramentas e procurando formas melhores de resolver problemas visuais para empresas e profissionais. Gosto de conhecer projetos diferentes, criar parcerias de longo prazo e ajudar negócios a se apresentarem de forma mais profissional.",
-      whatsappTitle: "Por que você não vai encontrar meu WhatsApp por aqui?",
+        "Hi! I'm Aleksandra, the designer and front-end developer behind AS Studio. I'm always learning, testing new tools, and looking for better ways to solve visual challenges for businesses and professionals. I enjoy working on different kinds of projects, building long-term partnerships, and helping businesses present themselves more clearly and professionally.",
+      whatsappTitle: "Why do I ask for a brief first?",
       whatsappBody:
-        "Porque acredito que um bom projeto começa com um bom briefing. Quando você preenche o formulário, consigo entender melhor sua necessidade antes mesmo do nosso primeiro contato.",
+        "Because a good project starts with a clear understanding of what you need. When you fill out the form, I can review your goals, references, timeline, and budget before our first conversation.",
       closing:
-        "Isso economiza tempo para nós dois, evita mensagens intermináveis e me permite analisar seu projeto com mais atenção. Depois da análise, entro em contato pelo WhatsApp com sugestões, dúvidas (se houver) e uma proposta personalizada de acordo com seus objetivos e orçamento.",
-      cta: "Solicitar Proposta",
+        "This saves time for both of us, avoids endless back-and-forth messages, and helps me look at your project with more care. After reviewing your brief, I’ll contact you by email or WhatsApp with suggestions, questions if needed, and a tailored proposal.",
+      cta: "Request a proposal",
     },
     reviews: {
       title: "O que dizem",
@@ -155,7 +154,7 @@ export const translations = {
         {
           id: 1,
           title: "Design for Businesses",
-          price: "from R$ 99",
+          price: "from $75",
           shortDesc:
             "Presentations, business cards, banners, and corporate materials.",
           details:
@@ -163,8 +162,8 @@ export const translations = {
         },
         {
           id: 2,
-          title: "Renders & Visualization",
-          price: "from R$ 149",
+          title: "Commercial Visuals & Render-Style Images",
+          price: "from $100",
           shortDesc:
             "Product renders, facades, interiors, and visual materials.",
           details:
@@ -173,7 +172,7 @@ export const translations = {
         {
           id: 3,
           title: "Landing Pages & Websites",
-          price: "from R$ 799",
+          price: "from $500",
           shortDesc:
             "Fast, modern websites focused on presenting your business.",
           details:
@@ -196,20 +195,20 @@ export const translations = {
         "Direct communication, a simple process, and a focus on delivering exactly what your business needs.",
       items: [
         {
-          title: "Speed",
-          text: "Fast turnaround, direct communication, and a focus on delivery.",
+          title: "Fast Delivery",
+          text: "Clear timelines, direct communication, and a focus on getting things done.",
         },
         {
           title: "Revisions Included",
-          text: "Revisions included to make sure the result matches your brief.",
+          text: "Revisions are included to make sure the final result matches your brief.",
         },
         {
-          title: "No Agency",
-          text: "You work directly with me — no middlemen, no extra overhead.",
+          title: "Direct Contact",
+          text: "You work directly with me — no middlemen, no agency overhead.",
         },
         {
-          title: "No Meetings",
-          text: "Everything handled by message, without endless calls.",
+          title: "Simple Process",
+          text: "Everything can be handled by message, without unnecessary meetings or endless calls.",
         },
       ],
     },
