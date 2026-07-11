@@ -1,10 +1,12 @@
-// src/data.ts
-
 export const CONFIG = {
   studioName: "AS Studio",
   authorName: "Aleksandra Shreider",
   location: "São Paulo, SP",
   currency: "(R$ / $ / €)",
+  social: {
+    instagram: "https://www.instagram.com/aleksandras.studio/",
+    facebook: "https://www.facebook.com/profile.php?id=61591500913263",
+  },
 };
 
 export const PORTFOLIO_IMAGES = [

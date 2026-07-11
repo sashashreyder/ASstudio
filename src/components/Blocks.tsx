@@ -4,6 +4,38 @@ import { useLanguage } from "../i18n/LanguageContext";
 
 const benefitIcons = [Zap, CheckCircle, MessageCircle, Globe];
 
+function InstagramIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-[18px] w-[18px]"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className="h-[18px] w-[18px]"
+      fill="currentColor"
+    >
+      <path d="M14.2 8.2V6.9c0-.7.5-.9.9-.9h1.7V3.2L14.4 3c-2.7 0-4.2 1.6-4.2 4.5v.7H7.8v3h2.4V21h3.2v-9.8h2.7l.4-3h-3.1Z" />
+    </svg>
+  );
+}
+
 export function Benefits() {
   const { t } = useLanguage();
 
@@ -155,16 +187,39 @@ export function AboutAndReviews() {
   );
 }
 
+
 export function Footer() {
   const { t } = useLanguage();
 
   return (
     <footer className="py-12 px-6 border-t border-border bg-surface">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-secondary">
           <p>
             © {new Date().getFullYear()} {CONFIG.studioName}
           </p>
+
+          <div className="flex items-center gap-3">
+            <a
+              href={CONFIG.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-secondary transition hover:-translate-y-0.5 hover:opacity-75"
+            >
+              <InstagramIcon />
+            </a>
+
+            <a
+              href={CONFIG.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-secondary transition hover:-translate-y-0.5 hover:opacity-75"
+            >
+              <FacebookIcon />
+            </a>
+          </div>
 
           <p className="text-center md:text-right text-pretty">
             {t.footer.basedIn} {CONFIG.location} • {t.footer.remoteWork}{" "}
