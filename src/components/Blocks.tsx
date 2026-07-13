@@ -1,5 +1,5 @@
 import { Zap, CheckCircle, MessageCircle, Globe } from "lucide-react";
-import { CONFIG, PORTFOLIO_IMAGES } from "../data";
+import { CONFIG, PORTFOLIO_IMAGES_BY_LANGUAGE } from "../data";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const benefitIcons = [Zap, CheckCircle, MessageCircle, Globe];
@@ -79,8 +79,10 @@ export function Benefits() {
 }
 
 export function Portfolio() {
-  const { t } = useLanguage();
-  const items = [...PORTFOLIO_IMAGES, ...PORTFOLIO_IMAGES];
+  const { t, language } = useLanguage();
+
+  const portfolioImages = PORTFOLIO_IMAGES_BY_LANGUAGE[language];
+  const items = [...portfolioImages, ...portfolioImages];
 
   return (
     <section id="portfolio" className="py-20 overflow-hidden bg-surface-muted">
@@ -97,11 +99,13 @@ export function Portfolio() {
 
             return (
               <a
-                key={idx}
+                key={`${item.preview}-${item.link}-${idx}`}
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className={`w-[280px] h-[380px] flex-shrink-0 rounded-3xl overflow-hidden bg-placeholder block ${idx === 0 ? "ml-4" : ""}`}
+                className={`w-[280px] h-[380px] flex-shrink-0 rounded-3xl overflow-hidden bg-placeholder block ${
+                  idx === 0 ? "ml-4" : ""
+                }`}
               >
                 {isVideo ? (
                   <video

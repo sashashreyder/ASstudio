@@ -1,3 +1,5 @@
+import type { Language } from "./i18n/language";
+
 export const CONFIG = {
   studioName: "AS Studio",
   authorName: "Aleksandra Shreider",
@@ -9,7 +11,12 @@ export const CONFIG = {
   },
 };
 
-export const PORTFOLIO_IMAGES = [
+type PortfolioItem = {
+  preview: string;
+  link: string;
+};
+
+const PORTFOLIO_IMAGES_PT: PortfolioItem[] = [
   {
     preview: "/cinema-cover.png",
     link: "/cinema.pdf",
@@ -39,3 +46,40 @@ export const PORTFOLIO_IMAGES = [
     link: "/renders.pdf",
   },
 ];
+
+export const PORTFOLIO_IMAGES_BY_LANGUAGE: Record<Language, PortfolioItem[]> = {
+  pt: PORTFOLIO_IMAGES_PT,
+
+  en: [
+    {
+      preview: "/cinema-cover.png",
+      link: "/cinema-eng.pdf",
+    },
+    {
+      preview: "/renders-cover-eng.png",
+      link: "/renders-tech-eng.pdf",
+    },
+    {
+      preview: "/business-cover-eng.mp4",
+      link: "/Business Materials.pdf",
+    },
+    {
+      preview: "/LookBook Cover.png",
+      link: "/LookBook-eng.pdf",
+    },
+    {
+      preview: "/Burya-eng.png",
+      link: "/burya-eng.pdf",
+    },
+    {
+      preview: "/hydrocut-cover-eng.mp4",
+      link: "https://bestpoint.vercel.app/",
+    },
+    {
+      preview: "/facades-cover-eng.png",
+      link: "/facades-eng.pdf",
+    },
+  ],
+};
+
+export const PORTFOLIO_IMAGES = PORTFOLIO_IMAGES_PT;
