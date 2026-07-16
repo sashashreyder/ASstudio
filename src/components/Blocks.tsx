@@ -41,7 +41,7 @@ export function Benefits() {
 
   return (
     <section className="pt-12 pb-20 md:pt-20 md:pb-32 bg-surface px-6">
-      <div className="max-w-6xl mx-auto mb-16">
+      <div className="max-w-6xl mx-auto mb-14">
         <h2 className="benefits-title font-bold text-center text-foreground">
           {t.benefits.title}
         </h2>
@@ -51,18 +51,19 @@ export function Benefits() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
         {t.benefits.items.map((item, i) => {
           const Icon = benefitIcons[i];
 
           return (
             <div
               key={i}
-              className="p-10 bg-card rounded-3xl shadow-theme-sm hover:shadow-theme-md transition-shadow duration-300"
+              className="h-full min-h-[21px] p-8 bg-card rounded-3xl shadow-theme-sm hover:shadow-theme-md transition-shadow duration-300 flex flex-col"
             >
-              <div className="flex items-center gap-3 mb-5">
-                <Icon className="text-icon" size={28} />
-                <h4 className="font-bold text-lg text-foreground">
+              <div className="flex items-center gap-3 mb-7">
+                <Icon className="text-icon shrink-0" size={28} />
+
+                <h4 className="font-bold text-[17px] leading-tight tracking-tight text-foreground whitespace-nowrap">
                   {item.title}
                 </h4>
               </div>
@@ -103,9 +104,8 @@ export function Portfolio() {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className={`w-[280px] h-[380px] flex-shrink-0 rounded-3xl overflow-hidden bg-placeholder block ${
-                  idx === 0 ? "ml-4" : ""
-                }`}
+                className={`w-[280px] h-[380px] flex-shrink-0 rounded-3xl overflow-hidden bg-placeholder block ${idx === 0 ? "ml-4" : ""
+                  }`}
               >
                 {isVideo ? (
                   <video
