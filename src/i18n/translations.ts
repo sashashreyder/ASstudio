@@ -25,6 +25,7 @@ export const translations = {
     services: {
       title: "O que eu faço",
       requestPackage: "Solicitar este pacote →",
+      marketplaceCta: "Ver serviço no Mercado Livre ↗",
       items: [
         {
           id: 1,
@@ -37,12 +38,12 @@ export const translations = {
         },
         {
           id: 2,
-          title: "Visuais Comerciais & Imagens com IA",
+          title: "Visuais Comerciais & Imagens para Produtos",
           price: "a partir de R$ 149",
           shortDesc:
-            "Imagens para produtos, fachadas, interiores, campanhas e materiais visuais.",
+            "Imagens profissionais para produtos, marketplaces, campanhas e materiais comerciais.",
           details:
-            "Crio imagens comerciais realistas a partir de fotos, referências, ferramentas de IA e edição de imagem. Ideal para apresentar produtos, ideias de fachada, interiores, materiais, campanhas e conceitos visuais antes de investir em uma produção fotográfica ou 3D tradicional.",
+            "Crio imagens comerciais personalizadas a partir de fotos, referências, ferramentas de IA e edição de imagem. Posso desenvolver conjuntos visuais para marketplaces, imagens de produto em contexto, infográficos, composições promocionais, conceitos de fachada e interiores. O foco é apresentar cada produto ou negócio de forma clara, consistente e profissional.",
         },
         {
           id: 3,
@@ -151,6 +152,7 @@ export const translations = {
     services: {
       title: "What I do",
       requestPackage: "Request this package →",
+      marketplaceCta: "View on Mercado Livre ↗",
       items: [
         {
           id: 1,
@@ -163,12 +165,12 @@ export const translations = {
         },
         {
           id: 2,
-          title: "Commercial Visuals & Render-Style Images",
+          title: "Commercial Visuals & Product Images",
           price: "from $100",
           shortDesc:
-            "AI-assisted product visuals, facade concepts, interiors, and promotional images.",
+            "Professional images for products, marketplaces, campaigns, and commercial materials.",
           details:
-            "I create realistic commercial visuals using references, photos, AI tools, and image editing. Ideal for presenting products, facade ideas, interiors, materials, campaigns, and visual concepts before investing in a full photoshoot or traditional 3D production.",
+            "I create custom commercial visuals using photos, references, AI-assisted tools, and image editing. I can develop complete image sets for marketplaces, product-in-context visuals, infographics, promotional compositions, facade concepts, and interior visuals. The focus is on presenting each product or business clearly, consistently, and professionally.",
         },
         {
           id: 3,

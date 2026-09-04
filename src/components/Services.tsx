@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 
+const MERCADO_LIVRE_URL = "https://servico.mercadolivre.com.br/MLB-7523337736#origin=share&sid=share&action=copy";
+
 export function Services() {
   const [openId, setOpenId] = useState<number | null>(null);
   const { t, formLink } = useLanguage();
@@ -46,14 +48,27 @@ export function Services() {
                 <p className="text-secondary leading-relaxed pt-4 border-t border-border-subtle">
                   {srv.details}
                 </p>
-                <a
-                  href={formLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block mt-6 text-accent font-bold hover:underline underline-offset-4"
-                >
-                  {t.services.requestPackage}
-                </a>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <a
+                    href={formLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold text-accent hover:underline underline-offset-4"
+                  >
+                    {t.services.requestPackage}
+                  </a>
+
+                  {srv.id === 2 && (
+                    <a
+                      href={MERCADO_LIVRE_URL}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center rounded-full bg-foreground px-5 py-2.5 text-sm font-bold text-surface transition-opacity hover:opacity-80"
+                    >
+                      {t.services.marketplaceCta}
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
